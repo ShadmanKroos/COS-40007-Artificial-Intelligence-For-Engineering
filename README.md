@@ -1,1 +1,19 @@
 # COS-40007-Artificial-Intelligence-For-Engineering
+
+This repository contains my portfolio labs and project work completed for Artificial Intelligence for Engineering, implemented using Python-based machine learning and deep learning workflows. The work focuses on the full AI pipeline, including exploratory data analysis, definition of ground truth labels, feature engineering, data preprocessing, model training, evaluation, and comparative analysis across multiple feature sets and model architectures.
+
+The repository includes structured machine learning tasks using multivariate time-series sensor data. These tasks involve selecting assigned signal channels, generating composite features (such as RMS-based combinations and orientation-derived signals), and computing statistical descriptors over fixed time windows, including mean, standard deviation, minimum, maximum, area under the curve, and peak counts. Multiple supervised learning models are developed and evaluated, including Support Vector Machines with train–test splitting, cross-validation, hyperparameter tuning, best-feature selection, and dimensionality reduction using Principal Component Analysis, alongside additional classifiers such as stochastic gradient descent, random forests, and multilayer perceptrons.
+
+An applied machine learning project is also included, demonstrating model selection and deployment workflows for an industrial-style dataset. This work compares multiple algorithms, identifies the best-performing model, saves and reloads trained models for inference on unseen data, and extracts interpretable decision rules from tree-based models. The project further separates controllable set-point variables from process variables to derive recommended operating ranges based on learned model behaviour.
+
+Deep learning components cover image-based tasks, including convolutional neural network development and transfer learning using ResNet50 for image classification, object detection and segmentation using Mask R-CNN with labelled datasets and format conversion pipelines, and a YOLOv5-based detection workflow incorporating annotation conversion, iterative training and testing, performance evaluation using IoU metrics, and real-time video inference.
+
+The project focuses on automated structural defect detection using deep learning–based object detection techniques. A YOLOv5 model was developed to identify and classify defects in tower structures using image data, with a primary focus on corrosion-related defects captured in high-resolution images.
+
+The input to the system is images of structural asset, and the output consists of detected defect regions overlaid on the image along with confidence scores and defect class labels. The dataset comprises tower images captured by drones, where sections of the structures exhibit visible defects. Since the raw data is unlabeled, the project involves manual annotation, using bounding box annotations to mark defect regions such as corrosion. Polygonal annotation is also applied at the structure level where required.
+
+The workflow includes data collection and preprocessing, image annotation, dataset preparation for object detection, YOLOv5 model training and validation, and performance evaluation using standard object detection metrics. The trained model is capable of localizing defects within tower images and classifying the detected issues according to defect type, supporting visual inspection and condition assessment tasks.
+
+This project demonstrates the application of deep learning for structural inspection, highlighting the end-to-end pipeline from raw image data to defect detection and classification in an engineering context.
+
+Note: Datasets and lab manuals are not included in this repository to ensure confidentiality and because they are not permitted for public sharing.
