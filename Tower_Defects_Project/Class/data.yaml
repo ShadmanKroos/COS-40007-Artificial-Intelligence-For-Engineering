@@ -1,0 +1,17 @@
+# Root directory for images & labels
+path: /content/drive/MyDrive/AI_Project_Data_Second/DataSet
+
+# sub-folders under `path`
+train: Training/Images
+val:   Validation/Images
+test:  Testing/Images
+
+# number of classes
+nc: 4
+
+# class names (by index)
+names:
+  0: Corrosion_Steel
+  1: Corrosion_Bolt
+  2: Cracks
+  3: Missing_Bolt
